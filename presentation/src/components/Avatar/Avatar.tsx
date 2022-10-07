@@ -1,16 +1,14 @@
-import React, { FC } from "react";
+import React, { FC, MouseEventHandler } from "react";
 import styles from "./Avatar.module.css";
 
 interface AvatarProps {
   url: string;
-  onClick: () => void;
+  onClick: MouseEventHandler;
 }
 
 const Avatar: FC<AvatarProps> = ({ url, onClick }) => (
   <div
-    role="div"
-    onKeyDown={() => onClick()}
-    onClick={() => onClick()}
+    onClick={onClick}
     className={styles.Avatar}
     style={{ backgroundImage: `url(${url})` }}
   />

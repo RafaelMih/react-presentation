@@ -12,7 +12,7 @@ const Presentation: FC<PresentationProps> = ({ person }) => (
     <div>
       <b>Nome:</b> {person?.name}
     </div>
-    <Cep cep="01001-000" />
+    <Cep cep={person?.cep} />
   </div>
 );
 
