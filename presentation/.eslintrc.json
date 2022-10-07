@@ -9,11 +9,27 @@
     "sourceType": "module"
   },
   "rules": {
-    "import/no-unresolved": "error"
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ]
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   },
   "extends": [
@@ -22,10 +38,5 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "react", 
-    "react-hooks", 
-    "@typescript-eslint", 
-    "prettier"
-  ]
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"]
 }
