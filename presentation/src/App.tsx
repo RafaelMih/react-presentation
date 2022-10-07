@@ -23,6 +23,27 @@ const App = () => {
           cep: "13026-515",
         });
         break;
+      case 3:
+        setPerson({
+          name: "Teste",
+          age: 20,
+          cep: "13026-515",
+        });
+        break;
+      case 4:
+        setPerson({
+          name: "Teste",
+          age: 20,
+          cep: "13026-515",
+        });
+        break;
+      case 5:
+        setPerson({
+          name: "Teste",
+          age: 20,
+          cep: "13026-515",
+        });
+        break;
       default:
         break;
     }
@@ -40,20 +61,20 @@ const App = () => {
           url="https://br.web.img3.acsta.net/pictures/22/05/09/16/16/3197518.jpg"
         />
         <Avatar
-          onClick={() => getPerson(1)}
+          onClick={() => getPerson(3)}
           url="https://br.web.img3.acsta.net/pictures/22/05/09/16/16/3197518.jpg"
         />
         <Avatar
-          onClick={() => getPerson(2)}
+          onClick={() => getPerson(4)}
           url="https://br.web.img3.acsta.net/pictures/22/05/09/16/16/3197518.jpg"
         />
         <Avatar
-          onClick={() => getPerson(1)}
+          onClick={() => getPerson(5)}
           url="https://br.web.img3.acsta.net/pictures/22/05/09/16/16/3197518.jpg"
         />
       </div>
       <div className="presentation col-md-7">
-        <Presentation person={person} />
+        {person ? <Presentation person={person} /> : null}
       </div>
     </div>
   );

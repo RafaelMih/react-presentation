@@ -27,8 +27,8 @@ const Cep: FC<CepProps> = ({ cep }) => {
   }, [cep]);
 
   useEffect(() => {
-    searchAddress();
     setError("");
+    searchAddress();
   }, [cep]);
 
   return (
