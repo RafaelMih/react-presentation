@@ -6,7 +6,7 @@ interface AvatarProps {
 }
 
 const Avatar: FC<AvatarProps> = ({ url }) => (
-  <div className={styles.Avatar}>{url}</div>
+  <div className={styles.Avatar} style={{ backgroundImage: `url(${url})` }} />
 );
 
 export default Avatar;
