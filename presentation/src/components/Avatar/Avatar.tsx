@@ -7,11 +7,13 @@ interface AvatarProps {
 }
 
 const Avatar: FC<AvatarProps> = ({ url, onClick }) => (
-  <div
-    onClick={onClick}
-    className={styles.Avatar}
-    style={{ backgroundImage: `url(${url})` }}
-  />
+  <div className="pointer">
+    <div
+      onClick={onClick}
+      className={styles.Avatar}
+      style={{ backgroundImage: `url(${url})` }}
+    />
+  </div>
 );
 
 export default Avatar;

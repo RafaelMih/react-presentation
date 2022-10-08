@@ -9,10 +9,24 @@ interface PresentationProps {
 
 const Presentation: FC<PresentationProps> = ({ person }) => (
   <div className={styles.Presentation}>
-    <div>
-      <b>Nome:</b> {person?.name}
+    <div className="div-photo">
+      <img src={person?.photoUrl} alt={person?.name} />
     </div>
-    <Cep cep={person?.cep} />
+    <div>
+      <div>
+        <b>{person?.name}</b>
+      </div>
+      <div>{person?.function}</div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <div>Sobre {person?.name.split(" ")[0]}</div>
+        <div>{person?.about}</div>
+      </div>
+      <Cep cep={person?.cep} />
+      <div>{person?.experience}</div>
+    </div>
   </div>
 );
 
