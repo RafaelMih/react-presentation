@@ -2,8 +2,12 @@
   margin: 20px;
 }
 
+.div-persons {
+  height: 100vh;
+}
+
 .presentation {
-  margin: 20px;
+  padding: 20px;
 }
 
 .title {
