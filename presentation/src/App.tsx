@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import "./App.css";
 import Avatar from "./components/Avatar/Avatar";
 import Presentation from "./components/Presentation/Presentation";
