@@ -1,4 +1,12 @@
 import { FC } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGraduationCap,
+  faInfoCircle,
+  faLocationDot,
+  faMasksTheater,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { IPerson } from "../../interfaces/IPerson";
 import styles from "./Presentation.module.css";
 
@@ -26,6 +34,13 @@ const Presentation: FC<PresentationProps> = ({ person }) => (
           </div>
           <div>{person?.function}</div>
           <hr />
+          <div className="icon-wrapper">
+            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon icon={faLocationDot} />
+            <FontAwesomeIcon icon={faGraduationCap} />
+            <FontAwesomeIcon icon={faInfoCircle} />
+            <FontAwesomeIcon icon={faMasksTheater} />
+          </div>
         </div>
       </div>
     </div>
