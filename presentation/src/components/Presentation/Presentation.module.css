@@ -10,3 +10,16 @@ img {
   text-align: center;
   height: 100;
 }
+
+@media screen and (min-width: 767px) {
+  Presentation, .container {
+    display: flex;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .row {
+    margin: 0;
+  }
+}
