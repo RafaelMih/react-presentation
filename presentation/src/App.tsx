@@ -22,7 +22,7 @@ const App = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-7 div-persons">
-            <div className="title">Conheça nosso time</div>
+            <h1 className="title">Clique para conhecer nosso time!</h1>
             <div className="avatar-section">
               {persons.map((p) => (
                 <Avatar onClick={() => getPerson(p.id)} url={p.photoUrl} />
