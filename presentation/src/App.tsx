@@ -34,7 +34,7 @@ const App = () => {
               ))}
             </div>
           </div>
-          <div className="col-md-7 presentation">
+          <div className="col-md-5 presentation">
             {person ? <Presentation person={person} /> : null}
           </div>
         </div>
