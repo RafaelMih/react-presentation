@@ -16,7 +16,7 @@ export const persons: IPerson[] = [
     id: 1,
     name: "Diane Cristina Lopes Losano",
     age: 20,
-    cep: "01001-000",
+    cep: "09780-595",
     about: "Blogueira e vende pack do pé",
     experience:
       "Trabalha a 10 anos na área em diversos setores como sistemas financeiros, e-commerce, CRM e etc",
