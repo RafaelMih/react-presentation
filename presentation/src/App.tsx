@@ -1,6 +1,11 @@
 import { useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCoffee,
+  faGraduationCap,
+  faInfoCircle,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Avatar from "./components/Avatar/Avatar";
 import Cep from "./components/Cep/Cep";
@@ -27,6 +32,9 @@ const App = () => {
             <h1 className="title">
               Clique para conhecer nosso time!
               <FontAwesomeIcon icon={faCoffee} />
+              <FontAwesomeIcon icon={faGraduationCap} />
+              <FontAwesomeIcon icon={faInfoCircle} />
+              <FontAwesomeIcon icon={faLocationDot} />
             </h1>
             <div className="avatar-section">
               {persons.map((p) => (
