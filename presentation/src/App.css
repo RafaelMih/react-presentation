@@ -28,11 +28,6 @@
   margin-bottom: 5rem;
 }
 
-.description-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 .about-wrapper {
   width: 30rem;
   background-color: #000;
@@ -40,7 +35,12 @@
   border-radius: 1rem;
 }
 
-h3, .description {
+.vertical {
+  align-items: baseline;
+}
+
+h3,
+.description {
   color: #fff;
   padding: 1rem;
 }
@@ -48,4 +48,3 @@ h3, .description {
 h3 {
   text-align: center;
 }
-

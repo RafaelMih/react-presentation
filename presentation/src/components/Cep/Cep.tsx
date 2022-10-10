@@ -36,6 +36,7 @@ const Cep: FC<CepProps> = ({ cep }) => {
       <Button onClick={searchAddress} type="button">
         {cep}
       </Button>
+      <hr />
       <div>{address ? <Address address={address} /> : null}</div>
       <div>{error ?? null}</div>
     </div>

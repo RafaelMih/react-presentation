@@ -1,6 +1,13 @@
 import { useCallback, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGraduationCap,
+  faInfoCircle,
+  faLocationDot,
+  faMasksTheater,
+  faUser,
+  faCoffee,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Avatar from "./components/Avatar/Avatar";
 import Cep from "./components/Cep/Cep";
@@ -39,30 +46,70 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="description-wrapper">
-        <div className="about-wrapper">
-          <h3>Sobre {person?.name.split(" ")[0]}</h3>
-          <div className="description">{person?.about}</div>
-        </div>
-        <div className="about-wrapper">
-          <h3>Endereço</h3>
-          <div className="description">
-            <Cep cep={person?.cep} />
+      {person ? (
+        <div className="row vertical">
+          <hr />
+          <div className="col-md-3">
+            <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon={faUser} /> Sobre
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">{person?.name} </h5>
+                <p className="card-text">{person?.about}</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2 align-top">
+            <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon={faLocationDot} /> Endereço
+              </div>
+              <div className="card-body">
+                <p>
+                  <Cep cep={person?.cep} />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon={faGraduationCap} /> Graduação
+              </div>
+              <div className="card-body">
+                <p>
+                  <div>{person?.graduation}</div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon={faInfoCircle} /> Experiência
+              </div>
+              <div className="card-body">
+                <p>
+                  <div>{person?.experience}</div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <div className="card-header">
+                <FontAwesomeIcon icon={faMasksTheater} /> Hobbies
+              </div>
+              <div className="card-body">
+                <p>
+                  <div>{person?.hobbie}</div>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="about-wrapper">
-          <h3>Formação</h3>
-          <div className="description">{person?.graduation}</div>
-        </div>
-        <div className="about-wrapper">
-          <h3>Experiência</h3>
-          <div className="description">{person?.experience}</div>
-        </div>
-        <div className="about-wrapper">
-          <h3>Hobbies</h3>
-          <div className="description">{person?.hobbie}</div>
-        </div>
-      </div>
+      ) : null}
     </div>
   );
 };
