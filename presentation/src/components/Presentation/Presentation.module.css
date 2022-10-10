@@ -1,5 +1,5 @@
 .Presentation {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 img {
@@ -16,9 +16,7 @@ img {
     display: flex;
     padding: 0;
   }
-}
 
-@media screen and (min-width: 767px) {
   .row {
     margin: 0;
   }
