@@ -23,7 +23,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="row">
-          <div className="col-md-7 div-persons">
+          <div className="col-lg-7">
             <h1 className="title">
               Clique para conhecer nosso time!
               <FontAwesomeIcon icon={faCoffee} />
@@ -34,7 +34,7 @@ const App = () => {
               ))}
             </div>
           </div>
-          <div className="col-md-5 presentation">
+          <div className="col-md-7 presentation">
             {person ? <Presentation person={person} /> : null}
           </div>
         </div>
