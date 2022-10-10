@@ -42,8 +42,8 @@ export const persons: IPerson[] = [
     name: "Flavio Fernando da Silva",
     age: 31,
     cep: "19061-250",
-    about: "Informar sobre",
-    experience: "Informar experiencia",
+    about: `Sou Fernando e moro em Presidente Prudente, uma pequena e tranquila cidade no oeste do estado de São Paulo. Sou casado, tenho um filho e trabalho como desenvolvedor.`,
+    experience: `Me formei e atuei como professor de lingua inglesa e como já conhecia um pouco de programação, resolvi migrar para a área em 2020.`,
     function: "Desenvolvedor",
     graduation: "Sistemas para internet",
     hobbie: `Ouvir musica é um dos meus maiores prazeres. Gosto muito dos anos 80 e as bandas Grunge.`,
@@ -67,12 +67,16 @@ export const persons: IPerson[] = [
     id: 5,
     name: "Renato Lucas dos Santos",
     age: 25,
-    cep: "01001-000",
-    about: "Informar sobre",
-    experience: "Informar experiencia",
+    cep: "05588-000",
+    about: `Sou um homem nascido em 1996, casado, brasileiro, sem religião, sem partido político e a favor do estado mínimo.`,
+    experience: `Atuei durante 3 anos liderando desenvolvimentos de soluções contábeis fiscais compatíveis com as versões SAP ERP ECC superior ou igual a 4.6. São exemplos de produtos desenvolvidos ECF, REINF, EFD ICMS IPI, EFD Contribuições. 
+    
+    Atualmente estou atuando como consultor técnico na empresa SAP. 
+
+    Por ser idealizador e fundador da plataforma MyTrader, adquiri conhecimento em tecnologias e linguagens de programação como C#, ASP CORE 2.0, Javascript, CSS.`,
     function: "Desenvolvedor",
     graduation: "Sistemas para internet",
-    hobbie: "Informar os hobbies",
-    photoUrl: "",
+    hobbie: "Programar, debater, questionar e assistir vídeos no YouTube.",
+    photoUrl: `https://media-exp1.licdn.com/dms/image/C4D03AQGUIj9akUYT9Q/profile-displayphoto-shrink_800_800/0/1593007744309?e=1671062400&v=beta&t=LZszoPJSpXm9a-8pOe4huS7nv5Ef8ObzRn90YQC1Nao`,
   },
 ];
