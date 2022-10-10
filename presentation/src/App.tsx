@@ -1,4 +1,6 @@
 import { useCallback, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Avatar from "./components/Avatar/Avatar";
 import Cep from "./components/Cep/Cep";
@@ -22,7 +24,10 @@ const App = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-7 div-persons">
-            <h1 className="title">Clique para conhecer nosso time!</h1>
+            <h1 className="title">
+              Clique para conhecer nosso time!
+              <FontAwesomeIcon icon={faCoffee} />
+            </h1>
             <div className="avatar-section">
               {persons.map((p) => (
                 <Avatar onClick={() => getPerson(p.id)} url={p.photoUrl} />
