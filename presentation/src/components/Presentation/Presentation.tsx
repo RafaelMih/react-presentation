@@ -34,7 +34,7 @@ const Presentation: FC<PresentationProps> = ({ person }) => (
           </div>
           <div>{person?.function}</div>
           <hr />
-          <div className="icon-wrapper">
+          <div className="icon-wrapper d-flex justify-content-between">
             <FontAwesomeIcon icon={faUser} />
             <FontAwesomeIcon icon={faLocationDot} />
             <FontAwesomeIcon icon={faGraduationCap} />
