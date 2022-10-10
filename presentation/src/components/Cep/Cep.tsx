@@ -28,15 +28,22 @@ const Cep: FC<CepProps> = ({ cep }) => {
 
   useEffect(() => {
     setError("");
-    searchAddress();
+    setAddress(undefined);
   }, [cep]);
 
   return (
     <div className={styles.Cep}>
-      <Button onClick={searchAddress} type="button">
+      <Button className="pointer" onClick={searchAddress} type="button">
         {cep}
       </Button>
-      <hr />
+      <u>
+        <small className="pointer" onClick={searchAddress}>
+          Visualizar endereço
+        </small>
+      </u>
+      <div>
+        <hr />
+      </div>
       <div>{address ? <Address address={address} /> : null}</div>
       <div>{error ?? null}</div>
     </div>
