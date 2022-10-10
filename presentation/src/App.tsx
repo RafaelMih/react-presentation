@@ -53,15 +53,10 @@ const App = () => {
           <div className="col-md-3">
             <Card header="Sobre" body={person?.about} icon={faUser} />
           </div>
-          <div className="col-md-2 align-top">
-            <div className="card">
-              <div className="card-header">
-                <FontAwesomeIcon icon={faLocationDot} /> Endereço
-              </div>
-              <div className="card-body">
-                <Cep cep={person?.cep} />
-              </div>
-            </div>
+          <div className="col-md-2">
+            <Card header="Endereço" icon={faLocationDot}>
+              <Cep cep={person?.cep} />
+            </Card>
           </div>
           <div className="col-md-2">
             <Card
