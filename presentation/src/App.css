@@ -49,28 +49,3 @@ h3 {
   text-align: center;
 }
 
-@media only screen and (min-width: 767px) and (max-device-width : 1024px) {
-  .div-persons {
-    width: 100%;
-  }
-
-  .presentation {
-    padding: 0;
-    width: 80%;
-    margin-bottom: 2rem;
-  }
-
-}
-
-@media only screen and (min-width: 767px) and (max-device-width : 1024px) {
-  .description-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .about-wrapper {
-    width: 100%;
-  }
-
-}
