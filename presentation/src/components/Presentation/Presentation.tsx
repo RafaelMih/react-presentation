@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { IPerson } from "../../interfaces/IPerson";
-import Cep from "../Cep/Cep";
 import styles from "./Presentation.module.css";
 
 interface PresentationProps {
@@ -29,14 +28,6 @@ const Presentation: FC<PresentationProps> = ({ person }) => (
           <hr />
         </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <div>Sobre {person?.name.split(" ")[0]}</div>
-        <div>{person?.about}</div>
-      </div>
-      <Cep cep={person?.cep} />
-      <div>{person?.experience}</div>
     </div>
   </div>
 );
