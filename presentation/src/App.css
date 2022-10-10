@@ -43,3 +43,7 @@ h3, .description {
   color: #fff;
   padding: 1rem;
 }
+
+h3 {
+  text-align: center;
+}
