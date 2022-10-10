@@ -2,6 +2,12 @@
   padding: 2rem;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .avatar-section {
   display: flex;
   justify-content: space-between;
@@ -9,7 +15,7 @@
 }
 
 .div-persons {
-  height: 100vh;
+  height: 50%;
 }
 
 .presentation {
@@ -19,4 +25,21 @@
 .title {
   font-size: 30px;
   text-align: center;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.about-wrapper {
+  width: 30rem;
+  background-color: #000;
+  border: solid white;
+  border-radius: 1rem;
+}
+
+h3, .description {
+  color: #fff;
+  padding: 1rem;
 }
