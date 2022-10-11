@@ -45,7 +45,7 @@ export const persons: IPerson[] = [
     about: `Sou Fernando e moro em Presidente Prudente, uma pequena e tranquila cidade no oeste do estado de São Paulo. Sou casado, tenho um filho e trabalho como desenvolvedor.`,
     experience: `Me formei e atuei como professor de lingua inglesa e como já conhecia um pouco de programação, resolvi migrar para a área em 2020.`,
     function: "Desenvolvedor",
-    graduation: "Sistemas para internet",
+    graduation: "Letras e Sistemas para internet",
     hobbie: `Ouvir musica é um dos meus maiores prazeres. Gosto muito dos anos 80 e as bandas Grunge.`,
     photoUrl: `https://media-exp1.licdn.com/dms/image/D4D03AQHps2RdSbR0Og/profile-displayphoto-shrink_800_800/0/1665356929982?e=1671062400&v=beta&t=UW00_dpy289pefrY57WVZjJwJqYEaYqaZZfInoHmBmY`,
   },
