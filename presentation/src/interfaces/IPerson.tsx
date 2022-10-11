@@ -17,12 +17,12 @@ export const persons: IPerson[] = [
     name: "Diane Cristina Lopes Losano",
     age: 20,
     cep: "09780-595",
-    about: "Blogueira e vende pack do pé",
+    about: `Desde criança queria ser aeromoça, mas como não teve o tamanho necessário para alcançar o bagageiro, escolheu ir para T.I`,
     experience:
       "Trabalha a 10 anos na área em diversos setores como sistemas financeiros, e-commerce, CRM e etc",
-    function: "Social media",
-    graduation: "Sistemas para internet",
-    hobbie: "Influencer",
+    function: "Tech lead",
+    graduation: "Sistemas de informação e sistemas para internet",
+    hobbie: "Cantar e tocar violão",
     photoUrl: `https://pps.whatsapp.net/v/t61.24694-24/300865425_7986848801389821_4848649359692664996_n.jpg?ccb=11-4&oh=01_AVyky8jTNRSz3WKuDmk1duEmtMXuw-pPXoGRkAxLMalX1g&oe=6351C4A1`,
   },
   {
